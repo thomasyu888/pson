@@ -4,7 +4,7 @@ import synapseutils
 syn = synapseclient.login()
 
 gseMetadata = "GSE94883-metadata.tsv"
-parentId = "syn12576666"
+parentId = "syn12685522"
 
 ## Read in the metadata extracted from GEO above.
 tsv = pd.read_csv(gseMetadata, sep="\t")
@@ -26,39 +26,37 @@ newTsv['used'] = float('nan')
 newTsv['executed'] = float('nan')
 
 
-newTsv['tumorType'] = float('nan')
+newTsv['tumorType'] = 
 
-newTsv['assay'] = "MBD-Seq" #(Add annotation)
+newTsv['assay'] =
 
 
 newTsv['dataSubtype'] = "raw"
-newTsv['dataType'] = "methylation" #(Add annotation)
+newTsv['dataType'] =  "geneExpression"
 newTsv['fileFormat'] = "raw"
 newTsv['resourceType'] = "experimentalData"
 
-newTsv['cellType'] = float('nan')
-newTsv['diagnosis'] = "Not Applicable"
+newTsv['cellType'] = 
+newTsv['diagnosis'] = 
 
 newTsv['isCellLine'] = False
 newTsv['isPrimaryCell'] = True #Coming from human / animal
 
-newTsv['tissue'] = "mammary gland"  #(Add annotation)
-newTsv['organ'] = float('nan')
+newTsv['tissue'] =   
+newTsv['organ'] = 
 
 
 
-newTsv['species'] = "Rat"
-newTsv['sex'] = [i.split(";")[1].split(": ")[1] for i in tsv['characteristics_ch1']]
+newTsv['species'] = "Mouse"
+newTsv['sex'] = 
 #Some specimens could come from one individual
 newTsv['specimenID'] = tsv['title']
-newTsv['individualID'] = tsv['title']
+newTsv['individualID'] = [i.split("_") for i in tsv['title']]
 
+newTsv['platform'] = "HiSeq2500" #Create new GAII
 
-newTsv['platform'] = "GAII" #Create new GAII
-
-newTsv['consortium'] = "CSBC"
+newTsv['consortium'] = "PSON"
 newTsv['fundingAgency'] = "NIH-NCI"
-
 
 
 
