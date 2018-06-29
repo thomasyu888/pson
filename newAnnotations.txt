@@ -1,0 +1,5 @@
+# Added annotations
+platform: GAII
+tissue: mammary gland
+dataType: methylation
+assay: MBD-Seq
