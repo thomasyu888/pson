@@ -3,7 +3,7 @@ import synapseclient
 import synapseutils
 syn = synapseclient.login()
 
-GSE = "GSE..."
+GSE = "GSE94883"
 gseMetadata = "%s-geo-metadata.tsv" % GSE
 parentId = 
 
