@@ -1,7 +1,7 @@
 import synapseclient
 syn = synapseclient.login()
 synProjectId = "syn7349759"
-name = "Preliminary Project 1"
+name = "Temp Project 1"
 studyName = "Rizvi-2017"
 
 
