@@ -1,9 +1,8 @@
 import synapseclient
 syn = synapseclient.login()
-synProjectId = "syn7349759"
+synProjectId = "syn7349757"
 name = "Temp Project 1"
-studyName = "Rizvi-2017"
-
+studyName = "Amankulor-2017"
 
 geoProjectEnt = syn.store(synapseclient.Folder(name, parentId = synProjectId))
 dataEnt = syn.store(synapseclient.Folder("Data", parentId = geoProjectEnt.id))
@@ -12,6 +11,13 @@ studyEnt =  syn.store(synapseclient.Folder(studyName, parentId = publicationsEnt
 samplesEnt = syn.store(synapseclient.Folder("Samples", parentId = geoProjectEnt.id))
 toolsEnt = syn.store(synapseclient.Folder("Tools", parentId = geoProjectEnt.id))
 
-print(publicationsEnt.id)
+print(studyEnt.id)
 
-geoProjectEnt
+# **Reference**
+
+#Title
+#Authors
+#[Journal/Publishing dat](Link)
+ 
+# **Abstract**
+

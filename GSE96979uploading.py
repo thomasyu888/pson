@@ -3,9 +3,9 @@ import synapseclient
 import synapseutils
 syn = synapseclient.login()
 
-GSE = "GSE..."
+GSE = "GSE96979"
 gseMetadata = "%s-geo-metadata.tsv" % GSE
-parentId = 
+parentId = "syn12976490"
 
 ## Read in the metadata extracted from GEO above.
 tsv = pd.read_csv(gseMetadata, sep="\t")
