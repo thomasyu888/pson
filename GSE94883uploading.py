@@ -26,9 +26,9 @@ newTsv['used'] = float('nan')
 newTsv['executed'] = float('nan')
 
 
-newTsv['tumorType'] = 
+newTsv['tumorType'] = "Not Applicable"
 
-newTsv['assay'] =
+newTsv['assay'] = "scrnaSeq"
 
 
 newTsv['dataSubtype'] = "raw"
@@ -36,22 +36,22 @@ newTsv['dataType'] =  "geneExpression"
 newTsv['fileFormat'] = "raw"
 newTsv['resourceType'] = "experimentalData"
 
-newTsv['cellType'] = 
-newTsv['diagnosis'] = 
+newTsv['cellType'] = "motor neuron"
+newTsv['diagnosis'] = "Not Applicable"
 
 newTsv['isCellLine'] = False
 newTsv['isPrimaryCell'] = True #Coming from human / animal
 
-newTsv['tissue'] =   
-newTsv['organ'] = 
+newTsv['tissue'] =  "Not Applicable"
+newTsv['organ'] = "brain"
 
 
 
 newTsv['species'] = "Mouse"
-newTsv['sex'] = 
+newTsv['sex'] = float('nan')
 #Some specimens could come from one individual
 newTsv['specimenID'] = tsv['title']
-newTsv['individualID'] = [i.split("_") for i in tsv['title']]
+newTsv['individualID'] = [i.split("_")[0] for i in tsv['title']]
 
 newTsv['platform'] = "HiSeq2500" #Create new GAII
 

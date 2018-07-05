@@ -26,7 +26,7 @@ newTsv['used'] = float('nan')
 newTsv['executed'] = float('nan')
 
 
-newTsv['tumorType'] = float('nan')
+newTsv['tumorType'] = "Not Applicable"
 
 newTsv['assay'] = "MBD-Seq" #(Add annotation)
 
