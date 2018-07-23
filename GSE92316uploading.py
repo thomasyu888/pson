@@ -29,7 +29,7 @@ newTsv['executed'] = float('nan')
 
 newTsv['tumorType'] = 
 
-newTsv['assay'] = 
+newTsv['assay'] = "rnaSeq"
 
 
 newTsv['dataSubtype'] = "raw" 
@@ -38,7 +38,7 @@ newTsv['fileFormat'] = "raw"
 newTsv['resourceType'] = "experimentalData"
 
 newTsv['cellType'] = 
-newTsv['diagnosis'] = 
+newTsv['diagnosis'] = "Breast Cancer"
 
 newTsv['isCellLine'] = False
 newTsv['isPrimaryCell'] = True #Coming from human / animal
@@ -48,10 +48,10 @@ newTsv['organ'] = "breast"
 
 
 newTsv['species'] = "Human"
-newTsv['sex'] = float('nan')
+newTsv['sex'] = float('nan')fj
 #Some specimens could come from one individual
 newTsv['specimenID'] = tsv['title']
-newTsv['individualID'] = 
+newTsv['individualID'] = [spec.split(" ")[0] for spec in tsv['title']]
 
 newTsv['platform'] = "HiSeq3000" #??
 
