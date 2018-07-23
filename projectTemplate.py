@@ -1,8 +1,8 @@
 import synapseclient
 syn = synapseclient.login()
-synProjectId = "syn7349757"
+synProjectId = "syn7349742"
 name = "Temp Project 1"
-studyName = "Amankulor-2017"
+studyName = "Nora-2017"
 
 geoProjectEnt = syn.store(synapseclient.Folder(name, parentId = synProjectId))
 dataEnt = syn.store(synapseclient.Folder("Data", parentId = geoProjectEnt.id))

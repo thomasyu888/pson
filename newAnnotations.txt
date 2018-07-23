@@ -2,7 +2,8 @@
 platform: GAII
 tissue: mammary gland
 dataType: methylation
-assay: MBD-Seq, scrnaSeq, "motor neuron" (http://www.ontobee.org/ontology/CL?iri=http://purl.obolibrary.org/obo/CL_0000100)
+assay: MBD-Seq, scrnaSeq, 
+cellType: "motor neuron" (http://www.ontobee.org/ontology/CL?iri=http://purl.obolibrary.org/obo/CL_0000100)
 
 
 
