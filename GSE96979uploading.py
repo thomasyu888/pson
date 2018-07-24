@@ -27,36 +27,36 @@ newTsv['used'] = float('nan')
 newTsv['executed'] = float('nan')
 
 
-newTsv['tumorType'] = 
+newTsv['tumorType'] = "Gliomas" #New annotation?
 
 newTsv['assay'] = 
 
 
 newTsv['dataSubtype'] = 
-newTsv['dataType'] = 
+newTsv['dataType'] = "geneExpression"
 newTsv['fileFormat'] = 
 newTsv['resourceType'] = 
 
 newTsv['cellType'] = 
-newTsv['diagnosis'] = 
+newTsv['diagnosis'] = "Brain Cancer"
 
-newTsv['isCellLine'] = 
-newTsv['isPrimaryCell'] =  #Coming from human / animal
+newTsv['isCellLine'] = False
+newTsv['isPrimaryCell'] = True #Coming from human / animal
 
 newTsv['tissue'] =  
-newTsv['organ'] = 
+newTsv['organ'] = "brain"
 
 
-newTsv['species'] = 
-newTsv['sex'] = 
+newTsv['species'] = "Mouse"
+newTsv['sex'] = float('nan')
 #Some specimens could come from one individual
-newTsv['specimenID'] = 
-newTsv['individualID'] = 
+newTsv['specimenID'] = tsv.title
+newTsv['individualID'] = [spec.split(" ")[0] for spec in tsv.title]
 
-newTsv['platform'] = 
+newTsv['platform'] = "HiSeq2500"
 
-newTsv['consortium'] = 
-newTsv['fundingAgency'] = 
+newTsv['consortium'] = "PSON"
+newTsv['fundingAgency'] = "NIH-NCI"
 
 
 ## Output the re-annotated data
