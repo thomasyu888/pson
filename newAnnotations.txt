@@ -1,9 +1,12 @@
 # Added annotations
-platform: GAII, HiSeq3000
-tissue: mammary gland
+platform: GAII, HiSeq3000, IlluminaMouseWG-6v2.0 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL6887), IonTorrentProton (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=18635)
+
+tissue: mammary gland, bone marrow (https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0002371)
 dataType: methylation
 assay: MBD-Seq, scrnaSeq, 
 cellType: "motor neuron" (http://www.ontobee.org/ontology/CL?iri=http://purl.obolibrary.org/obo/CL_0000100)
+
+cellType: glial (http://www.ontobee.org/ontology/CL?iri=http://purl.obolibrary.org/obo/CL_0000125)
 
 
 

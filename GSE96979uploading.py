@@ -29,21 +29,21 @@ newTsv['executed'] = float('nan')
 
 newTsv['tumorType'] = "Gliomas" #New annotation?
 
-newTsv['assay'] = 
+newTsv['assay'] = "rnaArray"
 
 
 newTsv['dataSubtype'] = 
 newTsv['dataType'] = "geneExpression"
 newTsv['fileFormat'] = 
-newTsv['resourceType'] = 
+newTsv['resourceType'] = "experimentalData"
 
-newTsv['cellType'] = 
+newTsv['cellType'] = "glial"
 newTsv['diagnosis'] = "Brain Cancer"
 
 newTsv['isCellLine'] = False
 newTsv['isPrimaryCell'] = True #Coming from human / animal
 
-newTsv['tissue'] =  
+newTsv['tissue'] =  "nerve tissue"
 newTsv['organ'] = "brain"
 
 
@@ -53,7 +53,7 @@ newTsv['sex'] = float('nan')
 newTsv['specimenID'] = tsv.title
 newTsv['individualID'] = [spec.split(" ")[0] for spec in tsv.title]
 
-newTsv['platform'] = "HiSeq2500"
+newTsv['platform'] = "IlluminaMouseWG-6v2.0"
 
 newTsv['consortium'] = "PSON"
 newTsv['fundingAgency'] = "NIH-NCI"

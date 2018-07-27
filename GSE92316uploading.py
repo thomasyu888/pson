@@ -40,8 +40,8 @@ newTsv['resourceType'] = "experimentalData"
 newTsv['cellType'] = "epithelial"
 newTsv['diagnosis'] = "Breast Cancer"
 
-newTsv['isCellLine'] = False
-newTsv['isPrimaryCell'] = True #Coming from human / animal
+newTsv['isCellLine'] = True
+newTsv['isPrimaryCell'] = False #Coming from human / animal
 
 newTsv['tissue'] = "mammary gland"
 newTsv['organ'] = "breast"
@@ -89,8 +89,8 @@ supp['resourceType'] = "experimentalData"
 supp['cellType'] = "epithelial"
 supp['diagnosis'] = "Breast Cancer"
 
-supp['isCellLine'] = False
-supp['isPrimaryCell'] = True #Coming from human / animal
+supp['isCellLine'] = True
+supp['isPrimaryCell'] = False #Coming from human / animal
 
 supp['tissue'] = "mammary gland"
 supp['organ'] = "breast"
