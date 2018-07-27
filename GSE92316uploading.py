@@ -48,7 +48,7 @@ newTsv['organ'] = "breast"
 
 
 newTsv['species'] = "Human"
-newTsv['sex'] = float('nan')
+newTsv['sex'] = "female"
 #Some specimens could come from one individual
 newTsv['specimenID'] = tsv['title']
 newTsv['individualID'] = [spec.split(" ")[0] for spec in tsv['title']]
@@ -97,7 +97,7 @@ supp['organ'] = "breast"
 
 
 supp['species'] = "Human"
-supp['sex'] = float('nan')
+supp['sex'] = "female"
 #Some specimens could come from one individual
 supp['specimenID'] = tsv['title']
 supp['individualID'] = [spec.split(" ")[0] for spec in tsv['title']]
